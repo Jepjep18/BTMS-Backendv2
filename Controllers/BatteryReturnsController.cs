@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using api.Data;
 using api.Models;
@@ -11,7 +6,8 @@ using Microsoft.AspNetCore.Cors;
 using System.Data;
 using api.DTO;
 using Dapper;
-using Microsoft.AspNetCore.Authorization; // Ensure you include this namespace
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Data.SqlClient; // Ensure you include this namespace
 
 namespace api.Controllers
 {
@@ -21,6 +17,7 @@ namespace api.Controllers
     public class BatteryReturnsController : ControllerBase
     {
         private readonly AppDbContext _context;
+
 
         public BatteryReturnsController(AppDbContext context)
         {
@@ -195,5 +192,63 @@ namespace api.Controllers
                 return Ok(result);
             }
         }
+
+        [HttpGet("api/battery-return/by-battery/{batteryId}")]
+        public IActionResult GetReturnByBatteryId(int batteryId)
+        {
+            var batteryReturn = _context.BatteryReturn
+                                 .Where(br => br.BatteryId == batteryId)
+                                 .FirstOrDefault();
+
+            if (batteryReturn == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(batteryReturn);
+        }
+        [HttpGet("return-details/{id}")]
+        public async Task<ActionResult<BatteryReturnResponseDto>> GetBatteryReturnById(int id)
+        {
+            var result = await (from br in _context.BatteryReturn
+                                join brel in _context.BatteryReleasing on br.BatteryId equals brel.Id
+                                join brec in _context.BatteryReceiving on brel.BatteryId equals brec.Id
+                                where br.Id == id // Fetch by ID
+                                select new BatteryReturnResponseDto
+                                {
+                                    BatteryReturnId = br.Id,
+                                    ReturnDate = br.ReceivedDate,
+                                    ReturnEndorsedBy = br.Endorsedby,
+                                    BatteryReturnBatteryId = br.BatteryId,
+                                    BusinessUnit = brel.BusinessUnit,
+                                    Imjno = brel.Imjno,
+                                    ReleaseDate = brel.ReleaseDate,
+                                    ReleasedReceivedBy = brel.Receivedby,
+                                    UserplateNo = brel.UserplateNo,
+                                    Remarks = brel.Remarks,
+                                    ReceivingId = brec.Id,
+                                    ReceivedDate = brec.DateReceived,
+                                    ReceivedReceivedBy = brec.Receivedby,
+                                    DrsiNo = brec.DrsiNo.HasValue ? brec.DrsiNo.Value.ToString() : string.Empty,
+                                    PoNo = brec.PoNo.HasValue ? brec.PoNo.Value.ToString() : string.Empty,
+                                    ItemCode = brec.ItemCode,
+                                    Supplier = brec.Supplier,
+                                    ItemDescription = brec.ItemDescription,
+                                    Batteryserial = brec.Batteryserial,
+                                    DebossedNo = brec.DebossedNo
+                                }).FirstOrDefaultAsync(); // Use FirstOrDefaultAsync since we're expecting a single item
+
+            if (result == null)
+            {
+                return NotFound(); // Return a 404 if not found
+            }
+
+            return Ok(result); // Return the found item
+        }
+
+
+
+
+
     }
 }

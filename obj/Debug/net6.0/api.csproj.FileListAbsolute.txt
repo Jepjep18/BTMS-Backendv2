@@ -3989,3 +3989,14 @@ C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\obj\Debug\net6.0\refint\
 C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\obj\Debug\net6.0\api.pdb
 C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\obj\Debug\net6.0\api.genruntimeconfig.cache
 C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\obj\Debug\net6.0\ref\api.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\System.ClientModel.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JBARNADO\Desktop\btims-updated\BTIMS-Backend-1\bin\Debug\net6.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll

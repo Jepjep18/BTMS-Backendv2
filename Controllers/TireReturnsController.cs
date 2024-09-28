@@ -163,5 +163,44 @@ namespace api.Controllers
             return Ok(tireReturn.TireId);
         }
 
+        [HttpGet("returned-items-details")]
+        public async Task<IActionResult> GetTireReturnDetails()
+        {
+            var tireReturnDetails = await (from tr in _context.TireReturn
+                                           join trel in _context.TireReleasing on tr.TireId equals trel.TireId
+                                           join trec in _context.TireReceiving on trel.TireId equals trec.Id
+                                           select new
+                                           {
+                                               TireReturnId = tr.Id,
+                                               ReturnDate = tr.ReceivedDate,
+                                               ReturnEndorsedBy = tr.EndorsedBy,
+                                               Purpose = tr.Purpose,
+                                               TireReleasingId = trel.Id,
+                                               BusinessUnit = trel.Company,
+                                               trel.Imjno,
+                                               trel.Driver,
+                                               trel.PlateNo,
+                                               trel.Abfiserialno,
+                                               trel.Remarks,
+                                               trel.ReleaseDate,
+                                               TireReleasingReceivedBy = trel.Receivedby, // Rename this property
+                                               ReceivingId = trec.Id,
+                                               trec.DateReceived,
+                                               trec.DebossedNo,
+                                               trec.DrciNo,
+                                               trec.ItemCategory,
+                                               trec.ItemCode,
+                                               trec.PoNo,
+                                               TireReceivingReceivedBy = trec.Receivedby, // Rename this property
+                                               trec.TireSerial,
+                                               trec.Tiresize,
+                                               trec.TireType
+                                           }).ToListAsync();
+
+            return Ok(tireReturnDetails);
+        }
+
+
+
     }
 }
