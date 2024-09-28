@@ -25,7 +25,7 @@ namespace api.Data
                 LastName = "User",
                 Role = "Admin",
                 Username = "000-001",
-                BusinessUnit = "ABFI Central",
+                BusinessUnit = "Cisdevo",
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword("Admin@123"),
                 DateCreated = DateTime.Now
             };
@@ -38,7 +38,7 @@ namespace api.Data
                 LastName = "User",
                 Role = "FAIPwarehouse",
                 Username = "000-002",
-                BusinessUnit = "FAIP",
+                BusinessUnit = "Logistics and Warehouse",
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword("@Temp123"),
                 DateCreated = DateTime.Now
             };
@@ -51,7 +51,7 @@ namespace api.Data
                 LastName = "User",
                 Role = "FAIPadmin",
                 Username = "000-003",
-                BusinessUnit = "FAIP",
+                BusinessUnit = "FAIP Admin",
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword("@Temp123"),
                 DateCreated = DateTime.Now
             };
@@ -64,18 +64,38 @@ namespace api.Data
                 LastName = "User",
                 Role = "BusinessUnit",
                 Username = "000-004",
-                BusinessUnit = "SubZero",
+                BusinessUnit = "Subzero",
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword("@Temp123"),
                 DateCreated = DateTime.Now
             };
             modelBuilder.Entity<BusinessUnit>().HasData(
-                new BusinessUnit {Id = 1, BusinessunitName = "ABFI Central", BusinessunitDescription = "Ana's Breeders Farm Central Office", BusinessLocation = "Binugao, Toril, Davao City" },
-                new BusinessUnit {Id = 2, BusinessunitName = "SFC", BusinessunitDescription = "SouthMin FeedMill Unit", BusinessLocation = "Binugao, Toril, Davao City" },
-                new BusinessUnit {Id = 3, BusinessunitName = "GSII", BusinessunitDescription = "GSII Unit", BusinessLocation = "Davao City"},
-                new BusinessUnit {Id = 4, BusinessunitName = "SubZero", BusinessunitDescription = "SubZero Unit", BusinessLocation = "Binugao, Toril, Davao City" },
-                new BusinessUnit {Id = 5, BusinessunitName = "JPPI", BusinessunitDescription = "JPPI Unit", BusinessLocation = "Dumoy, Toril, Davao City"},
-                new BusinessUnit {Id = 6, BusinessunitName = "QPMI", BusinessunitDescription = "QPMI Unit", BusinessLocation = "Lanang, Davao City"},
-                new BusinessUnit {Id = 7, BusinessunitName = "FAIP", BusinessunitDescription = "FAIP Unit", BusinessLocation = "FAIP Complex, Biao, Tugbok District, Davao City" });
+                new BusinessUnit {Id = 1, BusinessunitName = "Executive", BusinessunitDescription = "Executive Office Ana's Breeders Farm Central Office", BusinessLocation = "To be added"},
+                new BusinessUnit {Id = 2, BusinessunitName = "FEM", BusinessunitDescription = "To be added", BusinessLocation = "To be added"},
+                new BusinessUnit {Id = 3, BusinessunitName = "PO - Cenlo", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 4, BusinessunitName = "PO - Broiler", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 5, BusinessunitName = "PO - Breeder", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 6, BusinessunitName = "PO - Hatchery", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 7, BusinessunitName = "CAO", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 8, BusinessunitName = "Cisdevo", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 9, BusinessunitName = "Subzero", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 10, BusinessunitName = "Sales - ABFI", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 11, BusinessunitName = "PED - Planning", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 12, BusinessunitName = "PED - Project", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 13, BusinessunitName = "SFC", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 14, BusinessunitName = "Sales - QP/SCC", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 15, BusinessunitName = "JPPI", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 16, BusinessunitName = "Research and Development", BusinessunitDescription = "To be added", BusinessLocation = "To be added"},
+                new BusinessUnit {Id = 17, BusinessunitName = "GSII - Blown Film", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 18, BusinessunitName = "GSII - Recycling", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 19, BusinessunitName = "GSII - CHB/Ula", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 20, BusinessunitName = "HR FAIP", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 21, BusinessunitName = "FAIP Admin", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 22, BusinessunitName = "Dressing Plant", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 23, BusinessunitName = "QA Department", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 24, BusinessunitName = "Procurement", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 25, BusinessunitName = "Logistics and Warehouse", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 26, BusinessunitName = "Motor Pool", BusinessunitDescription = "To be added", BusinessLocation = "To be added" },
+                new BusinessUnit {Id = 27, BusinessunitName = "SCC", BusinessunitDescription = "To be added", BusinessLocation = "To be added" });
             modelBuilder.Entity<Role>().HasData(
                 new Role { Id = 1, Name = "FAIPadmin", Description = "Admin role for FAIP" },
                 new Role { Id = 2, Name = "FAIPwarehouse", Description = "Warehouse role for FAIP" },

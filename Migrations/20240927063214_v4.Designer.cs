@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -11,9 +12,11 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240927063214_v4")]
+    partial class v4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -303,81 +306,74 @@ namespace api.Migrations
                             Id = 16,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "Research and Development"
+                            BusinessunitName = "GSII - Blown Film"
                         },
                         new
                         {
                             Id = 17,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "GSII - Blown Film"
+                            BusinessunitName = "GSII - Recycling"
                         },
                         new
                         {
                             Id = 18,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "GSII - Recycling"
+                            BusinessunitName = "GSII - CHB/Ula"
                         },
                         new
                         {
                             Id = 19,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "GSII - CHB/Ula"
+                            BusinessunitName = "HR FAIP"
                         },
                         new
                         {
                             Id = 20,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "HR FAIP"
+                            BusinessunitName = "FAIP Admin"
                         },
                         new
                         {
                             Id = 21,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "FAIP Admin"
+                            BusinessunitName = "Dressing Plant"
                         },
                         new
                         {
                             Id = 22,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "Dressing Plant"
+                            BusinessunitName = "QA Department"
                         },
                         new
                         {
                             Id = 23,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "QA Department"
+                            BusinessunitName = "Procurement"
                         },
                         new
                         {
                             Id = 24,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "Procurement"
+                            BusinessunitName = "Logistics and Warehouse"
                         },
                         new
                         {
                             Id = 25,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
-                            BusinessunitName = "Logistics and Warehouse"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            BusinessLocation = "To be added",
-                            BusinessunitDescription = "To be added",
                             BusinessunitName = "Motor Pool"
                         },
                         new
                         {
-                            Id = 27,
+                            Id = 26,
                             BusinessLocation = "To be added",
                             BusinessunitDescription = "To be added",
                             BusinessunitName = "SCC"
@@ -699,11 +695,11 @@ namespace api.Migrations
                         {
                             Id = 1,
                             BusinessUnit = "Cisdevo",
-                            DateCreated = new DateTime(2024, 9, 27, 14, 47, 21, 644, DateTimeKind.Local).AddTicks(1444),
+                            DateCreated = new DateTime(2024, 9, 27, 14, 32, 14, 134, DateTimeKind.Local).AddTicks(7603),
                             FirstName = "Admin",
                             LastName = "User",
                             MiddleName = "Admin",
-                            PasswordHash = "$2a$11$vhruT9iYxD.GeKmeTriRmOjP80T5V5QQ6Y6nbMni5JoUJYk6Ip25C",
+                            PasswordHash = "$2a$11$6j1OccVdIOGzXbH9sAcMGewRZbDWEWyJzV6I.NpnvJHRWSUQKc4JG",
                             Role = "Admin",
                             Username = "000-001"
                         },
@@ -711,11 +707,11 @@ namespace api.Migrations
                         {
                             Id = 2,
                             BusinessUnit = "Logistics and Warehouse",
-                            DateCreated = new DateTime(2024, 9, 27, 14, 47, 21, 822, DateTimeKind.Local).AddTicks(353),
+                            DateCreated = new DateTime(2024, 9, 27, 14, 32, 14, 318, DateTimeKind.Local).AddTicks(2146),
                             FirstName = "Warehouse",
                             LastName = "User",
                             MiddleName = "Test",
-                            PasswordHash = "$2a$11$oeIQmb8kb3RP9zxASxmfwO2Ecw8q3DEPBUqD.cO1R68dQZfjvuEjy",
+                            PasswordHash = "$2a$11$Z67yI2V5oAmZ1j6YWOVob.jX4.nEV2nsPI60YI34.C6TWbjte9UIi",
                             Role = "FAIPwarehouse",
                             Username = "000-002"
                         },
@@ -723,11 +719,11 @@ namespace api.Migrations
                         {
                             Id = 3,
                             BusinessUnit = "FAIP Admin",
-                            DateCreated = new DateTime(2024, 9, 27, 14, 47, 22, 5, DateTimeKind.Local).AddTicks(8641),
+                            DateCreated = new DateTime(2024, 9, 27, 14, 32, 14, 497, DateTimeKind.Local).AddTicks(9194),
                             FirstName = "FAIP",
                             LastName = "User",
                             MiddleName = "Admin",
-                            PasswordHash = "$2a$11$42dvQNWT.Yj/DT9UZQ7jsuhpLZJxhScjAcRIiN67igQ4z7OeHjS0C",
+                            PasswordHash = "$2a$11$r2jahbmMM1HBX.5uYp7VM.bwCuE3so.OhvpAcMRUUzHPdv1iOtM9m",
                             Role = "FAIPadmin",
                             Username = "000-003"
                         },
@@ -735,11 +731,11 @@ namespace api.Migrations
                         {
                             Id = 4,
                             BusinessUnit = "Subzero",
-                            DateCreated = new DateTime(2024, 9, 27, 14, 47, 22, 183, DateTimeKind.Local).AddTicks(7253),
+                            DateCreated = new DateTime(2024, 9, 27, 14, 32, 14, 675, DateTimeKind.Local).AddTicks(9272),
                             FirstName = "Business",
                             LastName = "User",
                             MiddleName = "Unit",
-                            PasswordHash = "$2a$11$D/QseoAVYEMJpqrY763tguocjTtec9pSwIIgC.dkbofDZOumJPmf.",
+                            PasswordHash = "$2a$11$VVYTSzgu3Lx6eTyQW9X13OOCs0muTNjbEMqnjbuAIXFOnTVbvil7O",
                             Role = "BusinessUnit",
                             Username = "000-004"
                         });

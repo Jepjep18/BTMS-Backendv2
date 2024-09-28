@@ -12517,19 +12517,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JBARNADO\\.nuget\\packages\\": {}
+    "C:\\Users\\jatabilog\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\api.csproj",
+      "projectUniqueName": "C:\\Users\\jatabilog\\Desktop\\jeff\\BTMS-Backendv2\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\api.csproj",
-      "packagesPath": "C:\\Users\\JBARNADO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\obj\\",
+      "projectPath": "C:\\Users\\jatabilog\\Desktop\\jeff\\BTMS-Backendv2\\api.csproj",
+      "packagesPath": "C:\\Users\\jatabilog\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jatabilog\\Desktop\\jeff\\BTMS-Backendv2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JBARNADO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jatabilog\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12639,7 +12639,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

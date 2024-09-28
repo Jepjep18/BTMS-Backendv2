@@ -156,6 +156,42 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "api.Controllers.BatteryReceivingsController",
+    "Method": "SearchBatteryReceivings",
+    "RelativePath": "api/BatteryReceivings/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.Models.BatteryReceiving, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.BatteryReceivingsController",
+    "Method": "UploadExcel",
+    "RelativePath": "api/BatteryReceivings/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api.Controllers.BatteryReleasingsController",
     "Method": "GetBatteryReleasing",
     "RelativePath": "api/BatteryReleasings",
@@ -259,6 +295,48 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.BatteryReleasingsController",
+    "Method": "GetBatteryReleasingsByBatteryId",
+    "RelativePath": "api/BatteryReleasings/battery/{batteryId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batteryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.Models.BatteryReleasing, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.BatteryReleasingsController",
+    "Method": "ReleaseMultipleItems",
+    "RelativePath": "api/BatteryReleasings/release-multiple",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "releaseData",
+        "Type": "api.DTO.ReleaseMultipleItemsDto",
         "IsRequired": true
       }
     ],
@@ -741,6 +819,234 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "api.Controllers.TireDisposalsController",
+    "Method": "GetTireDisposal",
+    "RelativePath": "api/TireDisposals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.Models.TireDisposal, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.TireDisposalsController",
+    "Method": "PostTireDisposal",
+    "RelativePath": "api/TireDisposals",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tireDisposal",
+        "Type": "api.Models.TireDisposal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api.Models.TireDisposal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.TireDisposalsController",
+    "Method": "GetTireDisposal",
+    "RelativePath": "api/TireDisposals/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api.Models.TireDisposal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.TireDisposalsController",
+    "Method": "PutTireDisposal",
+    "RelativePath": "api/TireDisposals/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tireDisposal",
+        "Type": "api.Models.TireDisposal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.TireDisposalsController",
+    "Method": "DeleteTireDisposal",
+    "RelativePath": "api/TireDisposals/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.TireRecapsController",
+    "Method": "GetTireRecap",
+    "RelativePath": "api/TireRecaps",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.Models.TireRecap, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.TireRecapsController",
+    "Method": "PostTireRecap",
+    "RelativePath": "api/TireRecaps",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tireRecap",
+        "Type": "api.Models.TireRecap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.TireRecapsController",
+    "Method": "GetTireRecap",
+    "RelativePath": "api/TireRecaps/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api.Models.TireRecap",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.TireRecapsController",
+    "Method": "PutTireRecap",
+    "RelativePath": "api/TireRecaps/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tireRecap",
+        "Type": "api.Models.TireRecap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.TireRecapsController",
+    "Method": "DeleteTireRecap",
+    "RelativePath": "api/TireRecaps/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.TireRecapsController",
+    "Method": "GetTireRecapDetails",
+    "RelativePath": "api/TireRecaps/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.DTO.TireRecapDetailDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "api.Controllers.TireReceivingsController",
     "Method": "GetTireReceiving",
     "RelativePath": "api/TireReceivings",
@@ -871,6 +1177,42 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "api.Controllers.TireReceivingsController",
+    "Method": "SearchTireReceivings",
+    "RelativePath": "api/TireReceivings/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.Models.TireReceiving, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.TireReceivingsController",
+    "Method": "UploadExcel",
+    "RelativePath": "api/TireReceivings/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api.Controllers.TireReleasingsController",
     "Method": "GetTireReleasing",
     "RelativePath": "api/TireReleasings",
@@ -974,6 +1316,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.TireReleasingsController",
+    "Method": "ReleaseMultipleItems",
+    "RelativePath": "api/TireReleasings/release-multiple",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "releaseData",
+        "Type": "api.DTO.ReleaseMultipleTireItemsDto",
         "IsRequired": true
       }
     ],
@@ -1092,6 +1450,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.TireReturnsController",
+    "Method": "GetTireIdFromReturn",
+    "RelativePath": "api/TireReturns/{tireReturnId}/tire-id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tireReturnId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -1368,6 +1742,72 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[api.Models.User, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.UsersController",
+    "Method": "GetUsersByBusinessUnit",
+    "RelativePath": "api/Users/business-unit/{businessUnitName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessUnitName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.Models.User, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.UsersController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/Users/current-user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "api.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.UsersController",
+    "Method": "GetUsersView",
+    "RelativePath": "api/Users/get-users-based-on-bu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.DTO.UserBU, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
