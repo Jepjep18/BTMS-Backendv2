@@ -19,10 +19,12 @@ namespace api.Controllers
     public class UsersController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public UsersController(AppDbContext context)
+        public UsersController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         [HttpGet("business-unit/{businessUnitName}")]
