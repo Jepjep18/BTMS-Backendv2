@@ -24,6 +24,39 @@ namespace api.Controllers
             _context = context;
         }
 
+        [HttpGet("business-unit/{businessUnitName}")]
+        public async Task<ActionResult<IEnumerable<User>>> GetUsersByBusinessUnit(string businessUnitName)
+        {
+            var buname = businessUnitName.Trim().ToLower();
+
+            var users = await _context.User
+                .Where(u => u.BusinessUnit.Trim().ToLower() == buname)
+                .ToListAsync();
+
+            if (users == null || !users.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(users);
+        }
+
+
+        [HttpGet("get-users-based-on-bu")]
+        public async Task<ActionResult<IEnumerable<UserBU>>> GetUsersView()
+        {
+            var users = await _context.User
+                .Where(u => u.BusinessUnit != "Cisdevo" && u.BusinessUnit != "FAIP Admin")
+                .Select(u => new UserBU
+                {
+                    FirstName = u.FirstName,
+                    MiddleName = u.MiddleName,
+                    LastName = u.LastName,
+                })
+                .ToListAsync();
+            return Ok(users);
+        }
+
         [HttpGet("all-users")]
         [Authorize(Policy = "Admin")]
         public async Task<ActionResult<IEnumerable<User>>> GetUser()
