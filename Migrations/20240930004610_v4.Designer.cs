@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -11,9 +12,11 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240930004610_v4")]
+    partial class v4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -120,7 +123,7 @@ namespace api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("BatteryReleasingId")
+                    b.Property<int?>("BatteryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Endorsedby")
@@ -131,7 +134,9 @@ namespace api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BatteryReleasingId");
+                    b.HasIndex("BatteryId")
+                        .IsUnique()
+                        .HasFilter("[BatteryId] IS NOT NULL");
 
                     b.ToTable("BatteryReturn");
                 });
@@ -605,14 +610,14 @@ namespace api.Migrations
                     b.Property<DateTime?>("ReceivedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("TireReleasingId")
+                    b.Property<int?>("TireId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TireReleasingId")
+                    b.HasIndex("TireId")
                         .IsUnique()
-                        .HasFilter("[TireReleasingId] IS NOT NULL");
+                        .HasFilter("[TireId] IS NOT NULL");
 
                     b.ToTable("TireReturn");
                 });
@@ -696,84 +701,48 @@ namespace api.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-                            BusinessUnit = "ABFI Central",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 700, DateTimeKind.Local).AddTicks(5666),
-                            FirstName = "Admin",
-                            LastName = "User",
-                            MiddleName = "Admin",
-                            PasswordHash = "$2a$11$UowM8huLMa3ljaEkG2io1eEh0/p4.JHhj/t.jNhmRujl9X0/3JZeW",
-=======
                             BusinessUnit = "Cisdevo",
                             DateCreated = new DateTime(2024, 9, 30, 8, 46, 9, 563, DateTimeKind.Local).AddTicks(5078),
                             FirstName = "Admin",
                             LastName = "User",
                             MiddleName = "Admin",
                             PasswordHash = "$2a$11$yYRsZXiWru9iq9et35P2le4NUU8HOonzhaqQpPP9ObvM4BjX2QXnO",
->>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
                             Role = "Admin",
                             Username = "000-001"
                         },
                         new
                         {
                             Id = 2,
-<<<<<<< HEAD
-                            BusinessUnit = "FAIP",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 846, DateTimeKind.Local).AddTicks(4952),
-                            FirstName = "Warehouse",
-                            LastName = "User",
-                            MiddleName = "Test",
-                            PasswordHash = "$2a$11$WGrHProE9pBtl1oZqIHX6.H3xBd3XEvbaow6nAX8fAYvmF6qlMCSW",
-=======
                             BusinessUnit = "Logistics and Warehouse",
                             DateCreated = new DateTime(2024, 9, 30, 8, 46, 9, 736, DateTimeKind.Local).AddTicks(9002),
                             FirstName = "Warehouse",
                             LastName = "User",
                             MiddleName = "Test",
                             PasswordHash = "$2a$11$MJiwNjG9A9tA2.5E5psYwemOO0IOISHiJd0he10xf4Ps346zw26Ou",
->>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
                             Role = "FAIPwarehouse",
                             Username = "000-002"
                         },
                         new
                         {
                             Id = 3,
-<<<<<<< HEAD
-                            BusinessUnit = "FAIP",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 995, DateTimeKind.Local).AddTicks(348),
-                            FirstName = "FAIP",
-                            LastName = "User",
-                            MiddleName = "Admin",
-                            PasswordHash = "$2a$11$SFr6P1pmrFB96ag3/uWlu.JpNignsEtUBhOnKqawb3yHketMY2uWy",
-=======
                             BusinessUnit = "FAIP Admin",
                             DateCreated = new DateTime(2024, 9, 30, 8, 46, 9, 908, DateTimeKind.Local).AddTicks(5112),
                             FirstName = "FAIP",
                             LastName = "User",
                             MiddleName = "Admin",
                             PasswordHash = "$2a$11$cw3gPSiIIy1OyAdlkxDg8eiSKuoP2EFlgV5Zgs7kqdRXviVaSdPDC",
->>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
                             Role = "FAIPadmin",
                             Username = "000-003"
                         },
                         new
                         {
                             Id = 4,
-<<<<<<< HEAD
-                            BusinessUnit = "SubZero",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 12, 140, DateTimeKind.Local).AddTicks(6327),
-                            FirstName = "Business",
-                            LastName = "User",
-                            MiddleName = "Unit",
-                            PasswordHash = "$2a$11$NRl8u8dJr/BoON7PxePDWeRmlKMMdvcpq9RT4WKSlyGyAr3.wFD5K",
-=======
                             BusinessUnit = "Subzero",
                             DateCreated = new DateTime(2024, 9, 30, 8, 46, 10, 78, DateTimeKind.Local).AddTicks(388),
                             FirstName = "Business",
                             LastName = "User",
                             MiddleName = "Unit",
                             PasswordHash = "$2a$11$ObpbRWWqYstluKKH4s8vTOTrZvBcRdliov6b2TUq6xf2.oWjfX/RW",
->>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
                             Role = "BusinessUnit",
                             Username = "000-004"
                         });
@@ -791,12 +760,12 @@ namespace api.Migrations
 
             modelBuilder.Entity("api.Models.BatteryReturn", b =>
                 {
-                    b.HasOne("api.Models.BatteryReleasing", "BatteryReleasing")
-                        .WithMany("BatteryReturn")
-                        .HasForeignKey("BatteryReleasingId")
+                    b.HasOne("api.Models.BatteryReceiving", "BReceiving")
+                        .WithOne("BatteryReturn")
+                        .HasForeignKey("api.Models.BatteryReturn", "BatteryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.Navigation("BatteryReleasing");
+                    b.Navigation("BReceiving");
                 });
 
             modelBuilder.Entity("api.Models.BatteryTransfer", b =>
@@ -841,12 +810,12 @@ namespace api.Migrations
 
             modelBuilder.Entity("api.Models.TireReturn", b =>
                 {
-                    b.HasOne("api.Models.TireReleasing", "TireReleasing")
+                    b.HasOne("api.Models.TireReceiving", "TReceiving")
                         .WithOne("TireReturn")
-                        .HasForeignKey("api.Models.TireReturn", "TireReleasingId")
+                        .HasForeignKey("api.Models.TireReturn", "TireId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.Navigation("TireReleasing");
+                    b.Navigation("TReceiving");
                 });
 
             modelBuilder.Entity("api.Models.TireTransfer", b =>
@@ -862,24 +831,24 @@ namespace api.Migrations
             modelBuilder.Entity("api.Models.BatteryReceiving", b =>
                 {
                     b.Navigation("BatteryReleasing");
+
+                    b.Navigation("BatteryReturn");
                 });
 
             modelBuilder.Entity("api.Models.BatteryReleasing", b =>
                 {
-                    b.Navigation("BatteryReturn");
-
                     b.Navigation("BatteryTransfer");
                 });
 
             modelBuilder.Entity("api.Models.TireReceiving", b =>
                 {
                     b.Navigation("TireReleasing");
+
+                    b.Navigation("TireReturn");
                 });
 
             modelBuilder.Entity("api.Models.TireReleasing", b =>
                 {
-                    b.Navigation("TireReturn");
-
                     b.Navigation("TireTransfer");
                 });
 

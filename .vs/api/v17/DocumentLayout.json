@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\",
+  "WorkspaceRootPath": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\batteryreturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batteryreturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +18,91 @@
     {
       "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\batteryreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\batteryreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Migrations\\20240930004610_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240930004610_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\batteryreleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\models\\userbu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\userbu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\models\\tirereleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\tirereleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\tirereturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirereturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\batteryreturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batteryreturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\tiretransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tiretransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\tirereleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirereleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\tirereceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirereceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\tirerecapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirerecapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\tiredisposalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tiredisposalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\businessunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\businessunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\batterytransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batterytransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\batteryreleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batteryreleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\batteryreceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jatabilog\\desktop\\jeff\\new folder\\btms-backendv2\\controllers\\batteryreceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batteryreceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\batteryreleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,6 +127,8 @@
     {
       "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\tirereleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\tirereleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+>>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
     }
   ],
   "DocumentGroupContainers": [
@@ -58,6 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 279,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -86,10 +167,26 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T06:31:12.514Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+>>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "BatteryReturnsController.cs",
               "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReturnsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BatteryReturnsController.cs",
@@ -98,15 +195,240 @@
               "ViewState": "AQIAANUAAAAAAAAAAAAQwPsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T06:29:25.708Z",
+=======
+              "Title": "20240930004610_v4.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Migrations\\20240930004610_v4.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240930004610_v4.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Migrations\\20240930004610_v4.cs",
+              "RelativeToolTip": "Migrations\\20240930004610_v4.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T00:46:10.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T00:41:35.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserBU.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Models\\UserBU.cs",
+              "RelativeDocumentMoniker": "Models\\UserBU.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Models\\UserBU.cs",
+              "RelativeToolTip": "Models\\UserBU.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T00:40:33.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TireReleasing.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Models\\TireReleasing.cs",
+              "RelativeDocumentMoniker": "Models\\TireReleasing.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Models\\TireReleasing.cs",
+              "RelativeToolTip": "Models\\TireReleasing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T00:39:40.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TireReturnsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireReturnsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TireReturnsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireReturnsController.cs",
+              "RelativeToolTip": "Controllers\\TireReturnsController.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAYwMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:00:14.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TireTransfersController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireTransfersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TireTransfersController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireTransfersController.cs",
+              "RelativeToolTip": "Controllers\\TireTransfersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:00:18.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:00:22.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-27T01:25:39.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-27T01:25:31.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:26:31.966Z",
+>>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 4,
+=======
+              "DocumentIndex": 9,
+              "Title": "BatteryReturnsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryReturnsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BatteryReturnsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryReturnsController.cs",
+              "RelativeToolTip": "Controllers\\BatteryReturnsController.cs",
+              "ViewState": "AQIAAMsAAAAAAAAAAAAAAPYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:59:40.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TireReleasingsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireReleasingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TireReleasingsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireReleasingsController.cs",
+              "RelativeToolTip": "Controllers\\TireReleasingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:00:10.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TireReceivingsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireReceivingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TireReceivingsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireReceivingsController.cs",
+              "RelativeToolTip": "Controllers\\TireReceivingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:00:07.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TireRecapsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireRecapsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TireRecapsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireRecapsController.cs",
+              "RelativeToolTip": "Controllers\\TireRecapsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:00:03.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TireDisposalsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireDisposalsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TireDisposalsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\TireDisposalsController.cs",
+              "RelativeToolTip": "Controllers\\TireDisposalsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:59:59.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "Controllers\\RoleController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:59:55.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BusinessUnitController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BusinessUnitController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BusinessUnitController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BusinessUnitController.cs",
+              "RelativeToolTip": "Controllers\\BusinessUnitController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:59:50.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BatteryTransfersController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryTransfersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BatteryTransfersController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryTransfersController.cs",
+              "RelativeToolTip": "Controllers\\BatteryTransfersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:59:45.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+>>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
               "Title": "BatteryReleasingsController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReleasingsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryReleasingsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BatteryReleasingsController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReleasingsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryReleasingsController.cs",
               "RelativeToolTip": "Controllers\\BatteryReleasingsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -115,11 +437,15 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 20,
+>>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
               "Title": "BatteryReceivingsController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReceivingsController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryReceivingsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BatteryReceivingsController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReceivingsController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\BatteryReceivingsController.cs",
               "RelativeToolTip": "Controllers\\BatteryReceivingsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -128,6 +454,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
               "Title": "BatteryTransfer.cs",
               "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryTransfer.cs",
@@ -215,6 +542,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T06:20:50.066Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\jatabilog\\Desktop\\jeff\\New folder\\BTMS-Backendv2\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowEQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:53:02.893Z",
+>>>>>>> 558a8e8ad6921507d0253ddb0cbabb46175df7e6
               "EditorCaption": ""
             }
           ]
