@@ -136,7 +136,7 @@ namespace api.Controllers
         {
             var batteryReturnDetails = (from br in _context.BatteryReturn
                                         join rc in _context.BatteryReceiving
-                                        on br.BatteryId equals rc.Id into details
+                                        on br.BatteryReleasingId equals rc.Id into details
                                         from detail in details.DefaultIfEmpty()
                                         select new
                                         {
@@ -197,7 +197,7 @@ namespace api.Controllers
         public IActionResult GetReturnByBatteryId(int batteryId)
         {
             var batteryReturn = _context.BatteryReturn
-                                 .Where(br => br.BatteryId == batteryId)
+                                 .Where(br => br.BatteryReleasingId == batteryId)
                                  .FirstOrDefault();
 
             if (batteryReturn == null)
@@ -207,44 +207,52 @@ namespace api.Controllers
 
             return Ok(batteryReturn);
         }
+
+
         [HttpGet("return-details/{id}")]
-        public async Task<ActionResult<BatteryReturnResponseDto>> GetBatteryReturnById(int id)
+        public async Task<ActionResult<BatteryReturnResponseDto>> GetBatteryReturnDetails(int id)
         {
             var result = await (from br in _context.BatteryReturn
-                                join brel in _context.BatteryReleasing on br.BatteryId equals brel.Id
-                                join brec in _context.BatteryReceiving on brel.BatteryId equals brec.Id
-                                where br.Id == id // Fetch by ID
+                                where br.Id == id // Filter by id
+                                join brel in _context.BatteryReleasing on br.BatteryReleasingId equals brel.Id into brelGroup
+                                from brel in brelGroup.DefaultIfEmpty() // Left join
+                                join brec in _context.BatteryReceiving on brel.BatteryId equals brec.Id into brecGroup
+                                from brec in brecGroup.DefaultIfEmpty() // Left join
                                 select new BatteryReturnResponseDto
                                 {
                                     BatteryReturnId = br.Id,
                                     ReturnDate = br.ReceivedDate,
                                     ReturnEndorsedBy = br.Endorsedby,
-                                    BatteryReturnBatteryId = br.BatteryId,
-                                    BusinessUnit = brel.BusinessUnit,
-                                    Imjno = brel.Imjno,
-                                    ReleaseDate = brel.ReleaseDate,
-                                    ReleasedReceivedBy = brel.Receivedby,
-                                    UserplateNo = brel.UserplateNo,
-                                    Remarks = brel.Remarks,
-                                    ReceivingId = brec.Id,
-                                    ReceivedDate = brec.DateReceived,
-                                    ReceivedReceivedBy = brec.Receivedby,
-                                    DrsiNo = brec.DrsiNo.HasValue ? brec.DrsiNo.Value.ToString() : string.Empty,
-                                    PoNo = brec.PoNo.HasValue ? brec.PoNo.Value.ToString() : string.Empty,
-                                    ItemCode = brec.ItemCode,
-                                    Supplier = brec.Supplier,
-                                    ItemDescription = brec.ItemDescription,
-                                    Batteryserial = brec.Batteryserial,
-                                    DebossedNo = brec.DebossedNo
-                                }).FirstOrDefaultAsync(); // Use FirstOrDefaultAsync since we're expecting a single item
+                                    BatteryReturnBatteryId = br.BatteryReleasingId,
+                                    BusinessUnit = brel != null ? brel.BusinessUnit : string.Empty, // Handle null
+                                    Imjno = brel != null ? brel.Imjno : string.Empty, // Handle null
+                                    ReleaseDate = brel != null ? (DateTime?)brel.ReleaseDate : null, // Handle nullable DateTime
+                                    ReleasedReceivedBy = brel != null ? brel.Receivedby : string.Empty, // Handle null
+                                    UserplateNo = brel != null ? brel.UserplateNo : string.Empty, // Handle null
+                                    Remarks = brel != null ? brel.Remarks : string.Empty, // Handle null
+                                    ReceivingId = brec != null ? brec.Id : 0, // Handle null; change based on your logic
+                                    ReceivedDate = brec != null ? (DateTime?)brec.DateReceived : null, // Handle nullable DateTime
+                                    ReceivedReceivedBy = brec != null ? brec.Receivedby : string.Empty, // Handle null
+                                    DrsiNo = brec != null && brec.DrsiNo.HasValue ? brec.DrsiNo.Value.ToString() : string.Empty,
+                                    PoNo = brec != null && brec.PoNo.HasValue ? brec.PoNo.Value.ToString() : string.Empty,
+                                    ItemCode = brec != null ? brec.ItemCode : string.Empty, // Handle null
+                                    Supplier = brec != null ? brec.Supplier : string.Empty, // Handle null
+                                    ItemDescription = brec != null ? brec.ItemDescription : string.Empty, // Handle null
+                                    Batteryserial = brec != null ? brec.Batteryserial : string.Empty, // Handle null
+                                    DebossedNo = brec != null ? brec.DebossedNo : string.Empty, // Handle null
+                                }).FirstOrDefaultAsync(); // Fetch the item or null if not found
 
             if (result == null)
             {
-                return NotFound(); // Return a 404 if not found
+                return NotFound(); // Return 404 if no item found
             }
 
             return Ok(result); // Return the found item
         }
+
+
+
+
 
 
 

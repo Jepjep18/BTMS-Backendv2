@@ -133,7 +133,7 @@ namespace api.Controllers
         {
             var results = await (from tr in _context.TireRecap
                                  join tt in _context.TireReturn on tr.TireReturnId equals tt.Id
-                                 join trc in _context.TireReceiving on tt.TireId equals trc.Id
+                                 join trc in _context.TireReceiving on tt.TireReleasingId equals trc.Id
                                  select new TireRecapDetailDto
                                  {
                                      TireRecapId = tr.Id,

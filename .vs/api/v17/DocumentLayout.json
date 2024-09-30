@@ -3,64 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\tirereturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirereturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\batteryreturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batteryreturnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\dto\\batteryreturnresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:dto\\batteryreturnresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Migrations\\20240930063112_v6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240930063112_v6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\tiretransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tiretransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\tirereleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirereleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\tirereceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirereceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\tirerecapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tirerecapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\tiredisposalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\tiredisposalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\businessunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\businessunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\batterytransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batterytransferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\batteryreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\batteryreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\batteryreleasingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,8 +27,28 @@
       "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\batteryreceivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\batteryreleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\batteryreleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\batterytransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\batterytransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\batteryreceiving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\batteryreceiving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\tirereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\tirereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\tirereceiving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\tirereceiving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|c:\\users\\jbarnado\\desktop\\btims-updated\\btims-backend-1\\models\\tirereleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BEF4042-47AE-494C-A6EB-D5045E244E29}|api.csproj|solutionrelative:models\\tirereleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,228 +58,164 @@
       "DocumentGroups": [
         {
           "DockedWidth": 279,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BatteryReturnResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\DTO\\BatteryReturnResponseDto.cs",
-              "RelativeDocumentMoniker": "DTO\\BatteryReturnResponseDto.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\DTO\\BatteryReturnResponseDto.cs",
-              "RelativeToolTip": "DTO\\BatteryReturnResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "TireReturn.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\TireReturn.cs",
+              "RelativeDocumentMoniker": "Models\\TireReturn.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\TireReturn.cs",
+              "RelativeToolTip": "Models\\TireReturn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T01:04:59.346Z",
+              "WhenOpened": "2024-09-30T06:20:00.306Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240930063112_v6.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Migrations\\20240930063112_v6.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240930063112_v6.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Migrations\\20240930063112_v6.cs",
+              "RelativeToolTip": "Migrations\\20240930063112_v6.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:31:12.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TireReturnsController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireReturnsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TireReturnsController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireReturnsController.cs",
-              "RelativeToolTip": "Controllers\\TireReturnsController.cs",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAAwMcAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T02:00:14.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TireTransfersController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireTransfersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TireTransfersController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireTransfersController.cs",
-              "RelativeToolTip": "Controllers\\TireTransfersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T02:00:18.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T02:00:22.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-27T01:25:39.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-27T01:25:31.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAG0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:26:31.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "BatteryReturnsController.cs",
               "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReturnsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BatteryReturnsController.cs",
               "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReturnsController.cs",
               "RelativeToolTip": "Controllers\\BatteryReturnsController.cs",
-              "ViewState": "AQIAAMsAAAAAAAAAAAAAAPYAAAAJAAAA",
+              "ViewState": "AQIAANUAAAAAAAAAAAAQwPsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:59:40.325Z",
+              "WhenOpened": "2024-09-30T06:29:25.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TireReleasingsController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireReleasingsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TireReleasingsController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireReleasingsController.cs",
-              "RelativeToolTip": "Controllers\\TireReleasingsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T02:00:10.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TireReceivingsController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireReceivingsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TireReceivingsController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireReceivingsController.cs",
-              "RelativeToolTip": "Controllers\\TireReceivingsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T02:00:07.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TireRecapsController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireRecapsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TireRecapsController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireRecapsController.cs",
-              "RelativeToolTip": "Controllers\\TireRecapsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T02:00:03.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TireDisposalsController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireDisposalsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TireDisposalsController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\TireDisposalsController.cs",
-              "RelativeToolTip": "Controllers\\TireDisposalsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:59:59.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "Controllers\\RoleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:59:55.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BusinessUnitController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BusinessUnitController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BusinessUnitController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BusinessUnitController.cs",
-              "RelativeToolTip": "Controllers\\BusinessUnitController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:59:50.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BatteryTransfersController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryTransfersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BatteryTransfersController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryTransfersController.cs",
-              "RelativeToolTip": "Controllers\\BatteryTransfersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:59:45.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "BatteryReleasingsController.cs",
               "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReleasingsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BatteryReleasingsController.cs",
               "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReleasingsController.cs",
               "RelativeToolTip": "Controllers\\BatteryReleasingsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:59:35.392Z"
+              "WhenOpened": "2024-09-30T06:29:24.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "BatteryReceivingsController.cs",
               "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReceivingsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BatteryReceivingsController.cs",
               "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\BatteryReceivingsController.cs",
               "RelativeToolTip": "Controllers\\BatteryReceivingsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:59:30.911Z"
+              "WhenOpened": "2024-09-30T06:29:22.276Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
+              "DocumentIndex": 7,
+              "Title": "BatteryTransfer.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryTransfer.cs",
+              "RelativeDocumentMoniker": "Models\\BatteryTransfer.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryTransfer.cs",
+              "RelativeToolTip": "Models\\BatteryTransfer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T01:53:02.893Z"
+              "WhenOpened": "2024-09-30T06:25:55.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BatteryReceiving.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryReceiving.cs",
+              "RelativeDocumentMoniker": "Models\\BatteryReceiving.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryReceiving.cs",
+              "RelativeToolTip": "Models\\BatteryReceiving.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:22:37.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:22:18.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BatteryReturn.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryReturn.cs",
+              "RelativeDocumentMoniker": "Models\\BatteryReturn.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryReturn.cs",
+              "RelativeToolTip": "Models\\BatteryReturn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:19:55.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TireReceiving.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\TireReceiving.cs",
+              "RelativeDocumentMoniker": "Models\\TireReceiving.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\TireReceiving.cs",
+              "RelativeToolTip": "Models\\TireReceiving.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:22:40.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TireReleasing.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\TireReleasing.cs",
+              "RelativeDocumentMoniker": "Models\\TireReleasing.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\TireReleasing.cs",
+              "RelativeToolTip": "Models\\TireReleasing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:20:53.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BatteryReleasing.cs",
+              "DocumentMoniker": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryReleasing.cs",
+              "RelativeDocumentMoniker": "Models\\BatteryReleasing.cs",
+              "ToolTip": "C:\\Users\\JBARNADO\\Desktop\\btims-updated\\BTIMS-Backend-1\\Models\\BatteryReleasing.cs",
+              "RelativeToolTip": "Models\\BatteryReleasing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:20:50.066Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -21,6 +21,5 @@
         public string? ItemCategory { get; set; } = "Tire";
 
         public TireReleasing? TireReleasing { get; set; }
-        public TireReturn? TireReturn { get; set; }
     }
 }

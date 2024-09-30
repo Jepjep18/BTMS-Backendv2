@@ -20,6 +20,5 @@
 
 
         public BatteryReleasing? BatteryReleasing { get; set; }
-        public BatteryReturn? BatteryReturn { get; set; }
     }
 }

@@ -10,9 +10,9 @@
 
         public string? Purpose { get; set; }
 
-        public int? TireId { get; set; }
+        public int? TireReleasingId { get; set; }
 
-        public TireReceiving? TReceiving { get; set; }
+        public TireReleasing? TireReleasing { get; set; }
 
         // One-to-one relationship
         public TireRecap? TireRecap { get; set; }

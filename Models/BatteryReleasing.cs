@@ -11,6 +11,8 @@
         public string? Remarks { get; set; }
         public int? BatteryId { get; set; }
         public BatteryReceiving? BReceiving { get; set; }
+        public ICollection<BatteryReturn>? BatteryReturn { get; set; } // Update this line
+
         public ICollection<BatteryTransfer>? BatteryTransfer { get; set; }
     }
 }

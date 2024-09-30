@@ -9,6 +9,9 @@ using api.Data;
 using api.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization; // Ensure you include this namespace
+using api.DTO;
+
+
 
 namespace api.Controllers
 {
@@ -133,7 +136,7 @@ namespace api.Controllers
         {
             var tireReturnDetails = (from tr in _context.TireReturn
                                      join rc in _context.TireReceiving
-                                     on tr.TireId equals rc.Id into details
+                                     on tr.TireReleasingId equals rc.Id into details
                                      from detail in details.DefaultIfEmpty()
                                      select new
                                      {
@@ -160,45 +163,65 @@ namespace api.Controllers
             {
                 return NotFound();
             }
-            return Ok(tireReturn.TireId);
+            return Ok(tireReturn.TireReleasingId);
         }
 
-        [HttpGet("returned-items-details")]
-        public async Task<IActionResult> GetTireReturnDetails()
+        [HttpGet("returned-items-details/{id}")]
+        public async Task<IActionResult> GetTireReturnDetails(int id)
         {
             var tireReturnDetails = await (from tr in _context.TireReturn
-                                           join trel in _context.TireReleasing on tr.TireId equals trel.TireId
-                                           join trec in _context.TireReceiving on trel.TireId equals trec.Id
-                                           select new
+                                           join tr2 in _context.TireReleasing on tr.TireReleasingId equals tr2.Id into tr2Join
+                                           from tr2 in tr2Join.DefaultIfEmpty() // Left join
+                                           join tr3 in _context.TireReceiving on tr2.TireId equals tr3.Id into tr3Join
+                                           from tr3 in tr3Join.DefaultIfEmpty() // Left join
+                                           where tr.Id == id // Filter by ID
+                                           select new TireReturnDetailDto
                                            {
                                                TireReturnId = tr.Id,
-                                               ReturnDate = tr.ReceivedDate,
-                                               ReturnEndorsedBy = tr.EndorsedBy,
+                                               ReceivedDate = tr.ReceivedDate ?? DateTime.MinValue, // Handle nullable DateTime
+                                               EndorsedBy = tr.EndorsedBy,
                                                Purpose = tr.Purpose,
-                                               TireReleasingId = trel.Id,
-                                               BusinessUnit = trel.Company,
-                                               trel.Imjno,
-                                               trel.Driver,
-                                               trel.PlateNo,
-                                               trel.Abfiserialno,
-                                               trel.Remarks,
-                                               trel.ReleaseDate,
-                                               TireReleasingReceivedBy = trel.Receivedby, // Rename this property
-                                               ReceivingId = trec.Id,
-                                               trec.DateReceived,
-                                               trec.DebossedNo,
-                                               trec.DrciNo,
-                                               trec.ItemCategory,
-                                               trec.ItemCode,
-                                               trec.PoNo,
-                                               TireReceivingReceivedBy = trec.Receivedby, // Rename this property
-                                               trec.TireSerial,
-                                               trec.Tiresize,
-                                               trec.TireType
+                                               TireReleasingId = tr.TireReleasingId,
+                                               Company = tr2.Company,
+                                               Imjno = tr2.Imjno,
+                                               Driver = tr2.Driver,
+                                               PlateNo = tr2.PlateNo,
+                                               Abfiserialno = tr2.Abfiserialno,
+                                               Remarks = tr2.Remarks,
+                                               ReleaseDate = tr2.ReleaseDate ?? DateTime.MinValue, // Handle nullable DateTime
+                                               Receivedby = tr2.Receivedby,
+                                               TireId = tr2.TireId,
+                                               TireReceivingId = tr3.Id, // Ensure correct mapping
+                                               DateReceived = tr3.DateReceived ?? DateTime.MinValue, // Handle nullable DateTime
+                                               TireReceivedBy = tr3.Receivedby,
+                                               Supplier = tr3.Supplier,
+                                               ItemCode = tr3.ItemCode,
+                                               Quantity = tr3.Quantity,
+                                               Unitofmeasurement = tr3.Unitofmeasurement,
+                                               Tiresize = tr3.Tiresize,
+                                               Tirebrand = tr3.Tirebrand,
+                                               TireSerial = tr3.TireSerial,
+                                               DebossedNo = tr3.DebossedNo,
+                                               TireReceivingRemarks = tr3.Remarks,
+                                               TireReceivingStatus = tr3.Status,
+                                               TireType = tr3.TireType,
+                                               ItemCategory = tr3.ItemCategory
                                            }).ToListAsync();
+
+            if (tireReturnDetails == null || !tireReturnDetails.Any())
+            {
+                return NotFound(); // Return 404 if no details found for the specified ID
+            }
 
             return Ok(tireReturnDetails);
         }
+
+
+
+
+
+
+
 
 
 

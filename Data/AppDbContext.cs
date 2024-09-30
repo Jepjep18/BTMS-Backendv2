@@ -97,11 +97,14 @@ namespace api.Data
                 .HasForeignKey<BatteryReleasing>(br => br.BatteryId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<BatteryReceiving>()
-                .HasOne(b => b.BatteryReturn)
-                .WithOne(br => br.BReceiving)
-                .HasForeignKey<BatteryReturn>(br => br.BatteryId)
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<BatteryReturn>()
+                .HasOne(br => br.BatteryReleasing) // BatteryReturn has one BatteryReleasing
+                .WithMany(br => br.BatteryReturn) // BatteryReleasing can have many BatteryReturns
+                .HasForeignKey(br => br.BatteryReleasingId) // Foreign key in BatteryReturn
+                .OnDelete(DeleteBehavior.Cascade); // Optional: defines the behavior on delete
+
+
+
 
             modelBuilder.Entity<TireReleasing>()
                 .HasMany(t => t.TireTransfer)
@@ -115,10 +118,10 @@ namespace api.Data
                 .HasForeignKey<TireReleasing>(tr => tr.TireId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<TireReceiving>()
+            modelBuilder.Entity<TireReleasing>()
                 .HasOne(t => t.TireReturn)
-                .WithOne(tr => tr.TReceiving)
-                .HasForeignKey<TireReturn>(tr => tr.TireId)
+                .WithOne(tr => tr.TireReleasing)
+                .HasForeignKey<TireReturn>(tr => tr.TireReleasingId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<TireReturn>()

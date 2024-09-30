@@ -13,6 +13,8 @@
         public string? Receivedby { get; set; }
         public int? TireId { get; set; }
         public TireReceiving? TReceiving { get; set; }
+        public TireReturn? TireReturn { get; set; }
+
         public ICollection<TireTransfer>? TireTransfer { get; set; }
     }
 }

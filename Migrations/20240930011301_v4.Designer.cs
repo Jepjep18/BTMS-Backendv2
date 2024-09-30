@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -11,9 +12,11 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240930011301_v4")]
+    partial class v4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -120,7 +123,7 @@ namespace api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("BatteryReleasingId")
+                    b.Property<int?>("BatteryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Endorsedby")
@@ -131,7 +134,9 @@ namespace api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BatteryReleasingId");
+                    b.HasIndex("BatteryId")
+                        .IsUnique()
+                        .HasFilter("[BatteryId] IS NOT NULL");
 
                     b.ToTable("BatteryReturn");
                 });
@@ -366,6 +371,9 @@ namespace api.Migrations
                     b.Property<string>("ItemCode")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("NewTireSerial")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("PoNo")
                         .HasColumnType("int");
 
@@ -465,14 +473,14 @@ namespace api.Migrations
                     b.Property<DateTime?>("ReceivedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("TireReleasingId")
+                    b.Property<int?>("TireId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TireReleasingId")
+                    b.HasIndex("TireId")
                         .IsUnique()
-                        .HasFilter("[TireReleasingId] IS NOT NULL");
+                        .HasFilter("[TireId] IS NOT NULL");
 
                     b.ToTable("TireReturn");
                 });
@@ -557,11 +565,11 @@ namespace api.Migrations
                         {
                             Id = 1,
                             BusinessUnit = "ABFI Central",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 700, DateTimeKind.Local).AddTicks(5666),
+                            DateCreated = new DateTime(2024, 9, 30, 9, 13, 0, 677, DateTimeKind.Local).AddTicks(6878),
                             FirstName = "Admin",
                             LastName = "User",
                             MiddleName = "Admin",
-                            PasswordHash = "$2a$11$UowM8huLMa3ljaEkG2io1eEh0/p4.JHhj/t.jNhmRujl9X0/3JZeW",
+                            PasswordHash = "$2a$11$BIxwpWFDzYxOLaCkQRonNuic6CWt4s3XMR9DsEPBKj36mR7RAtTqS",
                             Role = "Admin",
                             Username = "000-001"
                         },
@@ -569,11 +577,11 @@ namespace api.Migrations
                         {
                             Id = 2,
                             BusinessUnit = "FAIP",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 846, DateTimeKind.Local).AddTicks(4952),
+                            DateCreated = new DateTime(2024, 9, 30, 9, 13, 0, 824, DateTimeKind.Local).AddTicks(771),
                             FirstName = "Warehouse",
                             LastName = "User",
                             MiddleName = "Test",
-                            PasswordHash = "$2a$11$WGrHProE9pBtl1oZqIHX6.H3xBd3XEvbaow6nAX8fAYvmF6qlMCSW",
+                            PasswordHash = "$2a$11$1ZVsfOYIgttcmszW9XR/Hu9wm7iCE9ByIjVKBAyx3zL7w3V5iGsSa",
                             Role = "FAIPwarehouse",
                             Username = "000-002"
                         },
@@ -581,11 +589,11 @@ namespace api.Migrations
                         {
                             Id = 3,
                             BusinessUnit = "FAIP",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 995, DateTimeKind.Local).AddTicks(348),
+                            DateCreated = new DateTime(2024, 9, 30, 9, 13, 0, 970, DateTimeKind.Local).AddTicks(4138),
                             FirstName = "FAIP",
                             LastName = "User",
                             MiddleName = "Admin",
-                            PasswordHash = "$2a$11$SFr6P1pmrFB96ag3/uWlu.JpNignsEtUBhOnKqawb3yHketMY2uWy",
+                            PasswordHash = "$2a$11$I4iNto8v7vje2RI2xzSCAOM53Wk/y6QOJrZ8mNRUbtPpGJsbt6eGi",
                             Role = "FAIPadmin",
                             Username = "000-003"
                         },
@@ -593,11 +601,11 @@ namespace api.Migrations
                         {
                             Id = 4,
                             BusinessUnit = "SubZero",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 12, 140, DateTimeKind.Local).AddTicks(6327),
+                            DateCreated = new DateTime(2024, 9, 30, 9, 13, 1, 120, DateTimeKind.Local).AddTicks(6842),
                             FirstName = "Business",
                             LastName = "User",
                             MiddleName = "Unit",
-                            PasswordHash = "$2a$11$NRl8u8dJr/BoON7PxePDWeRmlKMMdvcpq9RT4WKSlyGyAr3.wFD5K",
+                            PasswordHash = "$2a$11$hQY/Mx7qjRmGO8tt1dEHKu9Ag.FRjr6hb/SoY8r2DqRRqGlBluhpK",
                             Role = "BusinessUnit",
                             Username = "000-004"
                         });
@@ -615,12 +623,12 @@ namespace api.Migrations
 
             modelBuilder.Entity("api.Models.BatteryReturn", b =>
                 {
-                    b.HasOne("api.Models.BatteryReleasing", "BatteryReleasing")
-                        .WithMany("BatteryReturn")
-                        .HasForeignKey("BatteryReleasingId")
+                    b.HasOne("api.Models.BatteryReceiving", "BReceiving")
+                        .WithOne("BatteryReturn")
+                        .HasForeignKey("api.Models.BatteryReturn", "BatteryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.Navigation("BatteryReleasing");
+                    b.Navigation("BReceiving");
                 });
 
             modelBuilder.Entity("api.Models.BatteryTransfer", b =>
@@ -665,12 +673,12 @@ namespace api.Migrations
 
             modelBuilder.Entity("api.Models.TireReturn", b =>
                 {
-                    b.HasOne("api.Models.TireReleasing", "TireReleasing")
+                    b.HasOne("api.Models.TireReceiving", "TReceiving")
                         .WithOne("TireReturn")
-                        .HasForeignKey("api.Models.TireReturn", "TireReleasingId")
+                        .HasForeignKey("api.Models.TireReturn", "TireId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.Navigation("TireReleasing");
+                    b.Navigation("TReceiving");
                 });
 
             modelBuilder.Entity("api.Models.TireTransfer", b =>
@@ -686,24 +694,24 @@ namespace api.Migrations
             modelBuilder.Entity("api.Models.BatteryReceiving", b =>
                 {
                     b.Navigation("BatteryReleasing");
+
+                    b.Navigation("BatteryReturn");
                 });
 
             modelBuilder.Entity("api.Models.BatteryReleasing", b =>
                 {
-                    b.Navigation("BatteryReturn");
-
                     b.Navigation("BatteryTransfer");
                 });
 
             modelBuilder.Entity("api.Models.TireReceiving", b =>
                 {
                     b.Navigation("TireReleasing");
+
+                    b.Navigation("TireReturn");
                 });
 
             modelBuilder.Entity("api.Models.TireReleasing", b =>
                 {
-                    b.Navigation("TireReturn");
-
                     b.Navigation("TireTransfer");
                 });
 

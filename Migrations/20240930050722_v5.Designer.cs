@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -11,9 +12,11 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240930050722_v5")]
+    partial class v5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -120,7 +123,7 @@ namespace api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("BatteryReleasingId")
+                    b.Property<int?>("BatteryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Endorsedby")
@@ -131,7 +134,9 @@ namespace api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BatteryReleasingId");
+                    b.HasIndex("BatteryId")
+                        .IsUnique()
+                        .HasFilter("[BatteryId] IS NOT NULL");
 
                     b.ToTable("BatteryReturn");
                 });
@@ -557,11 +562,11 @@ namespace api.Migrations
                         {
                             Id = 1,
                             BusinessUnit = "ABFI Central",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 700, DateTimeKind.Local).AddTicks(5666),
+                            DateCreated = new DateTime(2024, 9, 30, 13, 7, 21, 916, DateTimeKind.Local).AddTicks(3826),
                             FirstName = "Admin",
                             LastName = "User",
                             MiddleName = "Admin",
-                            PasswordHash = "$2a$11$UowM8huLMa3ljaEkG2io1eEh0/p4.JHhj/t.jNhmRujl9X0/3JZeW",
+                            PasswordHash = "$2a$11$O4OIk.5xbAF5w1MzOwRO7uCETjCdQ2v.d6hqFoaTUIGMNchn5Z0om",
                             Role = "Admin",
                             Username = "000-001"
                         },
@@ -569,11 +574,11 @@ namespace api.Migrations
                         {
                             Id = 2,
                             BusinessUnit = "FAIP",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 846, DateTimeKind.Local).AddTicks(4952),
+                            DateCreated = new DateTime(2024, 9, 30, 13, 7, 22, 60, DateTimeKind.Local).AddTicks(7099),
                             FirstName = "Warehouse",
                             LastName = "User",
                             MiddleName = "Test",
-                            PasswordHash = "$2a$11$WGrHProE9pBtl1oZqIHX6.H3xBd3XEvbaow6nAX8fAYvmF6qlMCSW",
+                            PasswordHash = "$2a$11$TmZ8WFcflBWQHI9Vs74GA.zfDY3JlI36exDjWaETPfY/UbDhDL58K",
                             Role = "FAIPwarehouse",
                             Username = "000-002"
                         },
@@ -581,11 +586,11 @@ namespace api.Migrations
                         {
                             Id = 3,
                             BusinessUnit = "FAIP",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 11, 995, DateTimeKind.Local).AddTicks(348),
+                            DateCreated = new DateTime(2024, 9, 30, 13, 7, 22, 203, DateTimeKind.Local).AddTicks(4004),
                             FirstName = "FAIP",
                             LastName = "User",
                             MiddleName = "Admin",
-                            PasswordHash = "$2a$11$SFr6P1pmrFB96ag3/uWlu.JpNignsEtUBhOnKqawb3yHketMY2uWy",
+                            PasswordHash = "$2a$11$esB322LspwqqBJtYPIsw0.DeN.ZD6yhkVpQdcnIDNWprU7iXU1ZVK",
                             Role = "FAIPadmin",
                             Username = "000-003"
                         },
@@ -593,11 +598,11 @@ namespace api.Migrations
                         {
                             Id = 4,
                             BusinessUnit = "SubZero",
-                            DateCreated = new DateTime(2024, 9, 30, 14, 31, 12, 140, DateTimeKind.Local).AddTicks(6327),
+                            DateCreated = new DateTime(2024, 9, 30, 13, 7, 22, 344, DateTimeKind.Local).AddTicks(8086),
                             FirstName = "Business",
                             LastName = "User",
                             MiddleName = "Unit",
-                            PasswordHash = "$2a$11$NRl8u8dJr/BoON7PxePDWeRmlKMMdvcpq9RT4WKSlyGyAr3.wFD5K",
+                            PasswordHash = "$2a$11$nkbGdurk8AXEsXZ.Zw/EYu7Udkj337PRbIVEMpxkGurG50Uw8yTEO",
                             Role = "BusinessUnit",
                             Username = "000-004"
                         });
@@ -615,12 +620,12 @@ namespace api.Migrations
 
             modelBuilder.Entity("api.Models.BatteryReturn", b =>
                 {
-                    b.HasOne("api.Models.BatteryReleasing", "BatteryReleasing")
-                        .WithMany("BatteryReturn")
-                        .HasForeignKey("BatteryReleasingId")
+                    b.HasOne("api.Models.BatteryReceiving", "BReceiving")
+                        .WithOne("BatteryReturn")
+                        .HasForeignKey("api.Models.BatteryReturn", "BatteryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.Navigation("BatteryReleasing");
+                    b.Navigation("BReceiving");
                 });
 
             modelBuilder.Entity("api.Models.BatteryTransfer", b =>
@@ -686,12 +691,12 @@ namespace api.Migrations
             modelBuilder.Entity("api.Models.BatteryReceiving", b =>
                 {
                     b.Navigation("BatteryReleasing");
+
+                    b.Navigation("BatteryReturn");
                 });
 
             modelBuilder.Entity("api.Models.BatteryReleasing", b =>
                 {
-                    b.Navigation("BatteryReturn");
-
                     b.Navigation("BatteryTransfer");
                 });
 
